@@ -10,7 +10,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Setup Code
-          uses: "actions/checkout@v4" 
+          uses: "actions/checkout@v1" 
         - name: Setup Pnpm
           uses: "pnpm/setup@v4"
           with:
