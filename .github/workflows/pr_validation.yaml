@@ -12,10 +12,12 @@ jobs:
         - name: Setup Code
           uses: "actions/checkout@v4" 
         - name: Setup Pnpm
-          uses: "pnpm/setup@v1"
+          uses: pnpm/setup@v1
           with:
-            version: 10
+            version: 11
+            runtime: node@22
             cache: true
+
         - name: Install Dependencies 
           run: "pnpm install"
         - name: Build Application
